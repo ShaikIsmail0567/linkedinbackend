@@ -1,6 +1,7 @@
 const express=require("express")
 const app=express()
 app.use(express.json())
+app.use(cors())
 const { connection } = require("./config/db")
 const { postrouter } = require("./controllers/post.router")
 const {userrouter}=require("./controllers/user.route")
